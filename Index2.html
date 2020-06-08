@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Collab N.2014</title>
+<meta name="description" content="Web site developed using w3schools and previous web design projects  for displaying Collaboration Project #2014 for the Fleming College GIS program Open house, June 26th 2020">
+<meta name="keywords" content="HTML, CSS, JavaScript, Fleming College, GIS, Collaboration, Water Infrastructure">
+<meta name="author" content="Website developed by Emily Kingdon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="StyleSheet" href="StyleSheet2.css">
+<script type="text/javascript" src="ScriptStyle2.js"></script>
+
+<!--Navbar-->
+<!--side navebar template from w3schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav-->
+<div id="nav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Index2.html">Overview</a>
+  <a href="Methods2.html">Methods</a>
+  <a href="Product2.html">Product</a>
+  <a href="Contact2.html">Contact</a>
+</div>
+<span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; </span>
+<!--Image link from w3schools template: w3schools.com/css/tryit.asp?filename=trycss_ex_images_thumbnail_link -->
+<a target="_blank" href="https://flemingcollege.ca/">
+  <img id= "logo" src="frostlogo.png" alt="Fleming College Frost campus logo" width="10%">
+</a>
+<!--End of Navbar-->
+
+
+<!--Image Header-->
+<!-- image header from w3 schools template: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_travel&stacked=h-->
+<div class="w3-display-container" style="margin-bottom:5%;">
+  <img src="Prince_Edward_County_Ontario_Canada_002.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-container w3-aqua w3-hover-orange w3-hide-small"
+   style="bottom:10%;opacity:0.7;width:70% height: 700px">
+  <!--w3-xxlarge sets font to 24 pixels: https://www.w3schools.com/w3css/w3css_references.asp -->
+  <h1 class="w3-xxxlarge"> Collecting with Collector</h1><h4 id ="subtitle"> Organizing Water Infrastructure data for the County of Prince Edward</b></h4>
+</div>
+</div>
+<header>
+<!--End of image header--> 
+
+
+<body>
+<!-- Client section https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_app_launch&stacked=h-->
+<div class="w3-content w3-light-grey w3-justify w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>Client</b></h1>
+      <p id="client"><span class="w3-xlarge">Collect data like a pro.</span> You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <a href="http://thecounty.ca/" target="_blank" 
+          type="application/octet-stream"> <button id="btn" type="button" class="w3-opacity w3-hover-opacity-off">Click here to visit PEC's website</button></a>
+    </div> 
+<!--End of client section--> 	
+	
+<div class="w3-col l4 m6">
+<img id="countyLogo" src="CountyLogo.jpg" alt="Prince Edward County Logo" class="w3-image w3-right w3-hide-small" width="335" height="471">
+<!--MAP Image to be enlarged when clicked on. Only works if script is after html code. Therefore should JS link be moved to the bottom of the <body> tag? Will it mess other tags up?
+<!--Map Created by Emily Kingdon--> 
+<!--HTML template for displaying image larger when clicked on from w3schools template: https://www.w3schools.com/howto/howto_css_modal_images.asp-->
+	<img id="myImg" src="PEC_Boundaries.png" class="w3-image w3-right w3-hide-small" width="335" height="471">
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+</div>
+</div>
+</div>
+<script>
+// Start of modal map image
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<!-- End of Map image-->
+
+
+
+
+<!-- The team section. Outline from w3 schools template: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_marketing&stacked=h-->
+ <div class="w3-content w3-padding-64">
+  <div class="w3-row-padding">
+    <h2>The Team</h2>
+<hr style="width:200px">
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="TesterPhoto.png" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Allan Beldan</h3>
+          <p class="w3-opacity">Application Specialist </p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="TesterPhoto.png" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Emily Kingdon</h3>
+          <p class="w3-opacity">Cartographic Specialist</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="TesterPhoto.png" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Rebecca Sherwin</h3>
+          <p class="w3-opacity">Application Specialist</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<!--End of team section-->
+
+
+<!-- Overview Section https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_dark_portfolio&stacked=h -->
+<div class="w3-content w3-justify w3-padding-64">
+<div id="ProjectOverview">
+<h2>Project Overview</h2>
+<hr style="width:200px">
+<p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+  ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</p>
+</div>
+</div>
+
+
+
+ <!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
+  <div class="w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+
+
+</body>
+</html>

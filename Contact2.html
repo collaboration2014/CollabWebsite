@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Collab N.2014</title>
+<meta name="description" content="Web site developed using w3schools and previous web design projects  for displaying Collaboration Project #2014 for the Fleming College GIS program Open house, June 26th 2020">
+<meta name="keywords" content="HTML, CSS, JavaScript, Fleming College, GIS, Collaboration, Water Infrastructure">
+<meta name="author" content="Emily Kingdon, Allan Beldan and Rebecca Sherwin">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="StyleSheet2.css">
+<script type="text/javascript" src="ScriptStyle2.js"></script>
+</head>
+
+
+
+<!--Navbar-->
+<!--side navebar template from w3schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav-->
+<div id="nav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Index2.html">Overview</a>
+  <a href="Methods2.html">Methods</a>
+  <a href="Product2.html">Product</a>
+  <a href="Contact2.html">Contact</a>
+</div>
+<span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; </span>
+<p id="headtitle" class="w3-large"> Collecting with Collector - Project ID#2014</p>
+<!--Image link from w3schools template: w3schools.com/css/tryit.asp?filename=trycss_ex_images_thumbnail_link -->
+<a target="_blank" href="https://flemingcollege.ca/">
+  <img id= "logo" src="frostlogo.png" alt="Fleming College Frost campus logo" width="10%">
+</a>
+<!--End of Navbar-->
+
+<body>
+ <!-- Grid https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_marketing&stacked=h-->
+  <div class="w3-content w3-padding-64">
+  <div class="w3-row-padding">
+    <h2>Contact Us</h2>
+<hr style="width:200px">
+
+    <div class="w3-third w3-margin-bottom w3-opacity w3-hover-opacity-off">
+      <div class="w3-card-4">
+        <img src="TesterPhoto.png" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Allan Beldan</h3>
+          <p class="w3-opacity">Application Specialist </p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <!-- download pdf code from: https://stackoverflow.com/questions/364946/how-to-make-pdf-file-downloadable-in-html-link-->
+          <a id="downloadLink" href="Ekingdon_Resume2020.pdf" 
+          type="download" download="AllanBeldan_Resume" download> <button id="AllanResumeBtn" class="w3-button w3-block">Download Resume</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom w3-opacity w3-hover-opacity-off">
+      <div class="w3-card-4">
+        <img src="TesterPhoto.png" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Emily Kingdon</h3>
+          <p class="w3-opacity">Cartographic Specialist</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <!-- download pdf code from: https://stackoverflow.com/questions/364946/how-to-make-pdf-file-downloadable-in-html-link-->
+          <a id="downloadLink" href="Ekingdon_Resume2020.pdf" target="_blank" 
+          type="application/octet-stream" download="EmilyKingdon_Resume"> <button id="EmilyResumeBtn" class="w3-button w3-block">Download Resume</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom w3-opacity w3-hover-opacity-off">
+      <div class="w3-card-4">
+        <img src="TesterPhoto.png" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Rebecca Sherwin</h3>
+          <p class="w3-opacity">Application Specialist</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+		  <!-- download pdf code from: https://stackoverflow.com/questions/364946/how-to-make-pdf-file-downloadable-in-html-link-->
+          <a id="downloadLink" href="Ekingdon_Resume2020.pdf" target="_blank" 
+          type="application/octet-stream" download="RebeccaSherwin_Resume"> <button id="RebeccaResumeBtn" class="w3-button w3-block">Download Resume</button></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contact Section -->
+ <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-dark-grey">Fleming College</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-dark-grey w3-xxlarge w3-margin-right"></i> Lindsay, Ontario</p>
+      <p><i class="fa fa-phone fa-fw w3-text-dark-grey w3-xxlarge w3-margin-right"></i> Phone: (705) 324-9144 </p>
+      <p><i class="fa fa-envelope fa-fw w3-text-dark-grey w3-xxlarge w3-margin-right"> </i> Email: info@flemingcollege.ca</p>
+    </div><br>
+</div>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+
+  <!-- End Contact Section -->
+  
+  
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
+  <div class="w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
