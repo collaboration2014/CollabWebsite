@@ -56,7 +56,7 @@
 	
 <div class="w3-col l4 m6">
 <img id="countyLogo" src="CountyLogo.jpg" alt="Prince Edward County Logo" class="w3-image w3-right w3-hide-small" width="335" height="471">
-<!--MAP Image to be enlarged when clicked on. Only works if script is after html code. Therefore should JS link be moved to the bottom of the <body> tag? Will it mess other tags up?
+<!--MAP Image to be enlarged when clicked on. Only works if script is after html code. Therefore should JS link be moved to the bottom of the body tag? Will it mess other tags up?-->
 <!--Map Created by Emily Kingdon--> 
 <!--HTML template for displaying image larger when clicked on from w3schools template: https://www.w3schools.com/howto/howto_css_modal_images.asp-->
 	<img id="myImg" src="PEC_Boundaries.png" class="w3-image w3-right w3-hide-small" width="335" height="471">
@@ -83,7 +83,7 @@ img.onclick = function(){
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 }
-
+	
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
@@ -93,10 +93,7 @@ span.onclick = function() {
 }
 </script>
 <!-- End of Map image-->
-
-
-
-
+	
 <!-- The team section. Outline from w3 schools template: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_marketing&stacked=h-->
  <div class="w3-content w3-padding-64">
   <div class="w3-row-padding">
