@@ -72,7 +72,8 @@ ul {
 	font-size: 15px;}
 #headtitle:hover {
 	opacity: 100%;}
-#logo {display: inline; 
+#logo  {width: 10%;
+	display: inline; 
 	float: right;
 	text-align: center;
 	margin-top: 0.75%;
