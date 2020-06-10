@@ -1,11 +1,12 @@
 /*Main colour beign used in theme: #43BFF0*/
 
-bacground {color: #43BFF0;}
+
 
 /* Original template CSS*/
 body,h1,h2,h3,h4,h5 {
 	font-family: "Poppins", sans-serif}
 body {
+	background-color: color: #43BFF0;
 	font-size: 16px;}
 img {
 	margin-bottom: -8px;}
