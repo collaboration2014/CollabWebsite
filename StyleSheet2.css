@@ -17,7 +17,9 @@ ul {
 	margin: 0;}
 /*End of original template css*/
 	
-	
+
+video {
+	border-style: outset;}
 .infoSubtitle {
 	color: #43BFF0;}
 #subtitle {
