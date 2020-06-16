@@ -290,8 +290,8 @@ display: none;}
 /* The flip box container for required components section. Outline from w3schools template: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_image2*/
 .flip-box {
   background-color: transparent;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   perspective: 1000px; /* Can remove this if you don't want the 3D effect */}
 /* This container is needed to position the front and back side */
 .flip-box-inner {
@@ -316,6 +316,7 @@ display: none;}
   color: black;}
 /* Style the back side */
 .flip-box-back {
+  font-size: 20px;
   background-color: #43BFF0;
   color: white;
   transform: rotateY(180deg);
