@@ -20,6 +20,7 @@ ul {
 figcaption {
 	margin-top: 10%;
 	font-family: "Poppins", sans-serif;
+	font-style: italic;
         font-size: 12px;}	
 video {
 	border-style: outset;}
