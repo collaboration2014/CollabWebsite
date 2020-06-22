@@ -18,9 +18,9 @@ ul {
 /*End of original template css*/
 	
 figcaption {
-	margin-top: 5%;
-	font-family: "Poppins", sans-serif;}
-	
+	margin-top: 10%;
+	font-family: "Poppins", sans-serif;
+        font-size: 12px;}	
 video {
 	border-style: outset;}
 .infoSubtitle {
