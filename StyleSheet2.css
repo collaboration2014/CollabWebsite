@@ -10,7 +10,9 @@ body {
 	font-size: 16px;}
 img {
 	margin-bottom: -8px;}
-.mySlides {display: none;}
+.mySlides {
+	display: none;
+	height:210;}
 ul {
 	list-style-type: none; 
 	padding: 0; 
