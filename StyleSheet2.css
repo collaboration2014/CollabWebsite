@@ -11,8 +11,7 @@ body {
 img {
 	margin-bottom: -8px;}
 .mySlides {
-	display: none;
-	height:210;}
+	display: none;}
 ul {
 	list-style-type: none; 
 	padding: 0; 
@@ -47,7 +46,6 @@ video {
 	margin-right: 5%;}
 #methSlides {
 	box-sizing:content-box;
-	height:247;
 	margin-bottom: 15%;}
 #methDots {
 	text-align:center;}
